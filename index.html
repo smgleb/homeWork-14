@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./lib/materialize.min.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<!-------Task1------->
+	<pre>Task1. У вас есть список задач. При клике на кнопку "редактировать" откройте модальное окно alert, где пользователь введет новое название задачи.
+    </pre>
+
+	<ul id="todo-list" class="todo__list">
+		<li>
+			<span>Task 1</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 2</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 3</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 4</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 5</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 6</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 7</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 8</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 9</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+		<li>
+			<span>Task 10</span>
+			<a class="waves-effect waves-light btn">Редактировать</a>
+		</li>
+	</ul>
+
+
+	<!-------Task2------->
+	<pre>Task2. У вас есть input, который должен вывести квадрат выбранного вами числа. При клике на любое число выведите в input результат.</pre>
+
+	<div id="numbers">
+		<div>
+			<input class="inp" type="text" placeholder="Посчитайте квадрат числа. Например для числа 4 получим 16.">
+		</div>
+		<div>
+			<a class="waves-effect waves-light btn">4</a>
+			<a class="waves-effect waves-light btn">13</a>
+			<a class="waves-effect waves-light btn">36</a>
+			<a class="waves-effect waves-light btn">2</a>
+			<a class="waves-effect waves-light btn">37</a>
+			<a class="waves-effect waves-light btn">5</a>
+			<a class="waves-effect waves-light btn">21</a>
+			<a class="waves-effect waves-light btn">19</a>
+			<a class="waves-effect waves-light btn">20</a>
+			<a class="waves-effect waves-light btn">1</a>
+			<a class="waves-effect waves-light btn">10</a>
+			<a class="waves-effect waves-light btn">32</a>
+			<a class="waves-effect waves-light btn">9</a>
+			<a class="waves-effect waves-light btn">39</a>
+			<a class="waves-effect waves-light btn">18</a>
+			<a class="waves-effect waves-light btn">26</a>
+			<a class="waves-effect waves-light btn">27</a>
+			<a class="waves-effect waves-light btn">11</a>
+			<a class="waves-effect waves-light btn">23</a>
+			<a class="waves-effect waves-light btn">30</a>
+		</div>
+	</div>
+
+	<!-------Task3------->
+	<pre>
+        Task3. Дан ul, в нем несколько li. Под ul есть кнопка, при нажатии на которую в конец ul будет добавляться новый li с текстом 'task №..'. Сделайте так, чтобы при клике на каждый li, происходило зачеркивание задания. Это должно работать и для вновь добавленных li. Задачу решите с помощью делегирования (то есть событие должно быть навешано на ul).
+    </pre>
+
+
+	<ul id="menuList">
+		<li>task 1</li>
+		<li>task 2</li>
+		<li>task 3</li>
+	</ul>
+
+	<button id="btnAdd">Добавить li</button>
+
+
+	<!-------Task4------->
+	<pre>Task4. Есть поля ввода. Необходимо, чтобы при потери фокуса input, добавлялась проверка своего содержимого на правильное количество символов. Количество символов (правильное), указывается в атрибуте data-length. Если записано правильное количество, то граница инпута становится зеленой, если неправильное - красной, и ниже выводится сообщение "Неправильное количество символов. Необходимо ввести 3 символа".
+    </pre>
+
+	<form>
+		<div>
+			<input type="text" name="input1" data-length="5">
+		</div>
+		<div>
+			<input type="text" name="input2" data-length="6">
+		</div>
+		<div>
+			<input type="text" name="input3" data-length="3">
+		</div>
+	</form>
+
+
+
+	<!-------Task5------->
+
+
+	<pre>Task 5. При клике на кнопку "Посчитать сумму" умножьте количество выбранного товара на его цену. Количество выбранного товара можно изменять при клике на кнопки "+1" и "-1".(По желанию, добавьте проверку, чтобы нельзя было выбрать меньше 0 товаров.)</pre>
+
+
+	<div class="row" id="current-cart">
+		<div class="col s12 m3">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/book.jpg">
+					<span class="card-title">Product 1</span>
+				</div>
+				<div class="card-content">
+					<p>I am a very simple card. I am good at containing small bits of information.
+						I am convenient because I require little markup to use effectively.</p>
+				</div>
+				<div class="card-action">
+					<span>
+						Цена:
+					</span>
+					<span class="price">
+						10
+					</span>
+					<br>
+					<a class="waves-effect waves-light btn">-1</a>
+					<input class="total" type="text" style="width: 30px;" value="0">
+					<a class="waves-effect waves-light btn">+1</a>
+				</div>
+
+
+			</div>
+			<a class="waves-effect waves-light btn my">Посчитать сумму</a>
+			<div>Текущая сумма равна: <span id="current-total">0</span></div>
+		</div>
+	</div>
+
+
+	<!-------Task6------->
+
+
+	<pre>Task 6. При клике на кнопку "Посчитать сумму всех товаров" умножьте количество выбранных товаров на их сумму. Количество выбранного товара можно изменять при клике на кнопки "+1" и "-1".(По желанию, добавьте проверку, чтобы нельзя было выбрать меньше 0 товаров.)</pre>
+
+
+	<div class="row" id="current-cart-items">
+		<div class="col s12 m3">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/book.jpg">
+					<span class="card-title">Product 1</span>
+				</div>
+				<div class="card-content">
+					<p>I am a very simple card. I am good at containing small bits of information.
+						I am convenient because I require little markup to use effectively.</p>
+				</div>
+				<div class="card-action">
+					<span>
+						Цена:
+					</span>
+					<span class="price">
+						10
+					</span>
+					<br>
+					<a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+					<input class="total" type="text" style="width: 30px;" value="0">
+					<a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m3">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/book.jpg">
+					<span class="card-title">Product 2</span>
+				</div>
+				<div class="card-content">
+					<p>I am a very simple card. I am good at containing small bits of information.
+						I am convenient because I require little markup to use effectively.</p>
+				</div>
+				<div class="card-action">
+					<span>
+						Цена:
+					</span>
+					<span class="price">
+						10
+					</span>
+					<br>
+					<a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+					<input class="total" type="text" style="width: 30px;" value="0">
+					<a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m3">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/book.jpg">
+					<span class="card-title">Product 3</span>
+				</div>
+				<div class="card-content">
+					<p>I am a very simple card. I am good at containing small bits of information.
+						I am convenient because I require little markup to use effectively.</p>
+				</div>
+				<div class="card-action">
+					<span>
+						Цена:
+					</span>
+					<span class="price">
+						10
+					</span>
+					<br>
+					<a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+					<input class="total" type="text" style="width: 30px;" value="0">
+					<a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m3">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/book.jpg">
+					<span class="card-title">Product 4</span>
+				</div>
+				<div class="card-content">
+					<p>I am a very simple card. I am good at containing small bits of information.
+						I am convenient because I require little markup to use effectively.</p>
+				</div>
+				<div class="card-action">
+					<span>
+						Цена:
+					</span>
+					<span class="price">
+						100
+					</span>
+					<br>
+					<a class="waves-effect waves-light btn" data-btn="btn-neg">-1</a>
+					<input class="total" type="text" style="width: 30px;" value="0">
+					<a class="waves-effect waves-light btn" data-btn="btn-pos">+1</a>
+				</div>
+			</div>
+
+
+		</div>
+		<a class="waves-effect waves-light btn my1">Посчитать сумму всех товаров</a>
+		<div>Текущая сумма равна: <span id="current-total-items">0</span></div>
+	</div>
+
+
+
+
+	<!-------Task7------->
+	<pre>
+        Task7.  Дано поле ввода(input). Когда пользователь вводит текст, и нажимает клавишу Enter, нужно сделать чтобы введенный текст выводился в новый тег "p" под input, а содержимое input очищалось.
+    </pre>
+
+	<div>
+		<input type="text" name="input-info" data-length="3">
+	</div>
+
+
+
+
+
+	<!-------Task8------->
+	<pre>Task 8. При клике на кнопку "open info" (любого номера) откройте модальное окно. Чтобы его открыть добавьте к элементу "div id="modal1""  класс под названием "modal_open". Когда модальное окно будет открыто, вам необходимо при нажатии кнопку "ESC" закрыть его. Также в файле script_add.js вы найдете массив с данными, которые должны записываться в модальное окно. Например при клике на кнопку "open info 2", в массиве выбираете второй элемент, у которого есть id="2", title="Modal Header 2", description="A bunch of text №2" </pre>
+
+	<div class="row">
+		<div class="col s12">
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+					<h4>Modal Header 1</h4>
+					<p>A bunch of text №1</p>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+				</div>
+			</div>
+
+			<a class="waves-effect waves-light btn" data-numb="1">open info 1</a>
+			<a class="waves-effect waves-light btn" data-numb="2">open info 2</a>
+			<a class="waves-effect waves-light btn" data-numb="3">open info 3</a>
+			<a class="waves-effect waves-light btn" data-numb="4">open info 4</a>
+			<a class="waves-effect waves-light btn" data-numb="5">open info 5</a>
+			<a class="waves-effect waves-light btn" data-numb="6">open info 6</a>
+			<a class="waves-effect waves-light btn" data-numb="7">open info 7</a>
+			<a class="waves-effect waves-light btn" data-numb="8">open info 8</a>
+			<a class="waves-effect waves-light btn" data-numb="9">open info 9</a>
+			<a class="waves-effect waves-light btn" data-numb="10">open info 10</a>
+
+		</div>
+	</div>
+
+
+	<!-------Task9------->
+	<pre>
+    Task 9. Дан массив. Вам необходимо отрисовать меню. Создайте ul через createElement, затем вставьте каждый элемент этого массива в отдельную li внутри этой ul. Если внутри элемента массива, есть еще массив, создавайте новый ul и отрисовывайте подменю.
+</pre>
+
+	<ul class="menu">
+		<li>
+			<a href="#">Link1</a>
+			<ul class="sub-menu">
+				<li><a href="#">Link1.1</a></li>
+				<li><a href="#">Link1.2</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Link2</a></li>
+		<li>
+			<a href="#">Link3</a>
+			<ul class="sub-menu">
+				<li><a href="#">Link3.1</a></li>
+				<li><a href="#">Link3.2</a></li>
+			</ul>
+		</li>
+	</ul>
+
+
+
+
+	<script src="./script.js"></script>
+</body>
+
+</html>
